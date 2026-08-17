@@ -1,0 +1,5 @@
+17/08/2026
+
+- function pointers [https://www.cs.yale.edu/homes/aspnes/pinewiki/C(2f)FunctionPointers.html]
+- learning to enumerate objects in pipewire [https://docs.pipewire.org/page_tutorial2.html]
+
