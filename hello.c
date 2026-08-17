@@ -1,7 +1,12 @@
-#include <stdio.h>
+#include <pipewire/pipewire.h>
 
-int main(void)
+int main(int argc, char *argv[])
 {
-	printf("Hello, World\n");
+	pw_init(&argc, &argv);
+
+	fprintf(stdout, "Compiled with libpipewire %s\n"
+			"Linked with libpipewire %s\n",
+			pw_get_headers_version(),
+			pw_get_library_version());
 	return 0;
 }

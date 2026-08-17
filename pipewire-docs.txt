@@ -1,0 +1,3 @@
+registry_event_global
+
+static const struct pw_registry_events registry_events
