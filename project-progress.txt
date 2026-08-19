@@ -3,5 +3,9 @@
 - function pointers [https://www.cs.yale.edu/homes/aspnes/pinewiki/C(2f)FunctionPointers.html]
 - learning to enumerate objects in pipewire [https://docs.pipewire.org/page_tutorial2.html]
 
-18/08/2026
+19/08/2026
+
+- [https://docs.pipewire.org/page_tutorial3.html]
+	what the fuck am I reading I don't get it, it's not fucking clicking
+- learned about generic pointers and function-like macros
 
