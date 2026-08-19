@@ -56,3 +56,6 @@ dkms.conf
 
 # ignore ./build directory
 build/
+
+# learning-gaps.txt
+learning-gaps.txt
