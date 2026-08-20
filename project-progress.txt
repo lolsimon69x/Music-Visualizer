@@ -9,3 +9,8 @@
 	what the fuck am I reading I don't get it, it's not fucking clicking
 - learned about generic pointers and function-like macros
 
+20/08/2026
+
+- still trying to understand the basic template of pipewire API
+- added incomplete t3.c (roundtrip method)
+
