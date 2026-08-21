@@ -8,10 +8,12 @@ struct roundtrip_data {
 static void on_core_done(void *data, uint32_t id, int seq)
 {
 	struct roundtrip_data *d = data;
+	printf("value of pending data: %d\n", d->pending); // for testing shit
 	if (id == PW_ID_CORE && seq == d->pending) {
 		pw_main_loop_quit(d->loop);
 	}
 }
+
 static void roundtrip(struct pw_core *core, struct pw_main_loop *loop)
 {
 	static const struct pw_core_events core_events = {
@@ -67,7 +69,10 @@ int main(int argc, char *argv[])
 	pw_registry_add_listener(registry, &registry_listener,
 			&registry_events, NULL);
 
+	printf("before roundtrip\n"); // before roundtrip (debugging)
 	roundtrip(core, loop);
+
+	pw_proxy_destroy((struct pw_proxy*)registry);
 
 	return 0;
 }
